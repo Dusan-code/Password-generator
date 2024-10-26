@@ -1,3 +1,126 @@
 body {
-  margin: 0;
+    margin: 0;
+
+    --textColor1: rgb(140, 140, 150);
+    --fontSize1: 24px;
+    --textColor2: rgb(220, 220, 220);
+    --fontSize2: 20px;
+    --textColor3: rgb(100, 100, 110);
+
+    --backColor1: rgb(30, 30, 35);
+    --backColor2: rgb(20, 20, 25);
+    --backColor3: rgb(35, 35, 42);
+
+    --iconColor1: rgb(143, 253, 192);
+    --iconColor2: rgb(220, 220, 220);
+
+    font-family: Calibri;
+    font-size: var(--fontSize2);
+    color: var(--textColor2);
+
+    background-image: linear-gradient(var(--backColor1), var(--backColor2));
+    background-repeat: no-repeat;
+}
+
+.main-container {
+    margin: auto;
+    margin-top: 120px;
+    justify-items: center;
+}
+
+h1 {
+    color: var(--textColor1);
+    font-size: var(--fontSize1);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    padding: 20px;
+    gap: 25px;
+}
+
+.pass-container {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+
+    overflow: hidden; /*DO NOT REMOVE | ICON WILL GET BROKEN*/
+    background-color: var(--backColor3);
+}
+
+.password {
+    color: var(--textColor3);
+}
+
+.copy-icon {
+    width: 25px;
+    height: 25px;
+    filter: drop-shadow(0px 100px 0 var(--iconColor1));
+    transform: translateY(-100px);
+}
+
+.options-container {
+    padding: 10px 0 10px 0;
+    background-color: var(--backColor3);
+}
+
+.options-container div{
+    margin: 15px;
+}
+
+
+
+/*SLIDER GOES HERE*/
+
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: -10px;
+}
+
+.unchecked {
+    display: block;
+    width: 18px;
+    height: 18px;
+    translate: -15px 7px;
+    border: solid var(--iconColor2) 2px;
+    cursor: pointer;
+}
+
+.unchecked:hover {
+    border-color: var(--iconColor1);
+}
+
+.checked {
+    display: block;
+    width: 18px;
+    height: 18px;
+    translate: -15px 7px;
+    background-color: var(--iconColor1);
+    border: solid var(--iconColor1) 2px;
+    cursor: pointer;
+}
+
+.checked:hover {
+    border-color: var(--iconColor2);
+}
+
+/*MEDIA QUERIES FOR RESPONSIVE DESIGN*/
+
+@media only screen and (max-width: 800px) {
+    .main-container {
+        margin-top: 40px;
+    }
+    .container {
+        width: 100%;
+    }
+    body {
+        height: 100vh;
+    }
 }
