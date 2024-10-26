@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./main.js"></script>
 </head>
 <body>
-    
+    <div class="main-container">
+        <h1>Password Generator</h1>
+        <div class="container">
+            <div class="pass-container">
+                <h2 class="password">
+                    4!GHz24?
+                </h2>
+                <img class="copy-icon" src="./copy-icon.png" alt="copy icon">
+            </div>
+            <div class="options-container">
+                <div>
+                    <div>
+                        <p>Character Lenght</p>
+                        <p class="nChar">0</p>
+                    </div>
+                    <div class="checkbox">
+                        <div class="unchecked" id="Upper"></div>
+                        <p>Include Uppercase Letters</p>
+                    </div>
+                    <div class="checkbox">
+                        <div class="unchecked" id="Lower"></div>
+                        <p>Include Lowercase Letters</p>
+                    </div>
+                    <div class="checkbox">
+                        <div class="unchecked" id="Number"></div>
+                        <p>Include Numbers</p>
+                    </div>
+                    <div class="checkbox">
+                        <div class="unchecked" id="Symbol"></div>
+                        <p>Include Symbols</p>
+                    </div>
+                    <div class="strength-container">
+                        <h2 class="strength">STRENGTH</h2>
+                        <div class="indicator">
+                            <div class="L1"></div>
+                            <div class="L2"></div>
+                            <div class="L3"></div>
+                            <div class="L4"></div>
+                        </div>
+                    </div>
+                    <button>GENERATE <img src="" alt="->"></button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
