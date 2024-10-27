@@ -41,6 +41,8 @@ h1 {
     gap: 25px;
 }
 
+/*Password*/
+
 .pass-container {
     display: flex;
     height: 70px;
@@ -56,12 +58,22 @@ h1 {
     color: var(--textColor3);
 }
 
+/*Copy button*/
+/*<!> MAKE IT SVG <!>*/
+
+.copy {
+    cursor: pointer;
+}
+
 .copy-icon {
     width: 25px;
     height: 25px;
+
     filter: drop-shadow(0px 100px 0 var(--iconColor1));
     transform: translateY(-100px);
 }
+
+/*Options for generating password*/
 
 .options-container {
     padding: 10px 0 10px 0;
@@ -71,7 +83,6 @@ h1 {
 .options-container div{
     margin: 15px;
 }
-
 
 
 /*SLIDER GOES HERE*/
@@ -109,6 +120,50 @@ h1 {
 
 .checked:hover {
     border-color: var(--iconColor2);
+}
+
+/*Strength indicator*/
+
+.strength-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 0 10px 0 10px;
+
+    background-color: var(--backColor2);
+}
+
+/*Button to generate password*/
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    width: 95%;
+    height: 60px;
+
+    margin-left: 18px;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    border: solid var(--iconColor1) 2px;
+
+    background-color: var(--iconColor1);
+    cursor: pointer;
+}
+
+button:hover {
+    color: var(--iconColor1);
+    background-color: transparent;
+}
+
+button img {
+    width: 15px;
+    height: 15px;
 }
 
 /*MEDIA QUERIES FOR RESPONSIVE DESIGN*/
