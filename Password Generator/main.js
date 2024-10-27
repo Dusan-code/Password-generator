@@ -3,7 +3,7 @@ let Lower = document.getElementById("Lower");
 let Numberr = document.getElementById("Number");
 let Symbol = document.getElementById("Symbol");
 
-let PassDisplay = document.getElementsByClassName("password")
+let PassDisplay = document.getElementsByClassName("password");
 let Button = document.querySelector("button");
 
 let UpperState = false;
@@ -20,6 +20,9 @@ let PassLength = 10;
 let Options = 0;
 let Password = "";
 
+let x = null;
+let y = null;
+
 Button.addEventListener("click", () => {
     
     Password = "";
@@ -35,10 +38,10 @@ Button.addEventListener("click", () => {
         for (let i = 0; i < PassLength; i++) {
 
             let choise = Math.floor(Math.random() * Options);
-            if (choise == 0) Password += Uppers.charAt(Math.floor(Math.random() * Uppers.length()));
-            if (choise == 1) Password += Lowers.charAt(Math.floor(Math.random() * Lowers.length()));
-            if (choise == 2) Password += Numberrs.charAt(Math.floor(Math.random() * Numberrs.length()));
-            if (choise == 3) Password += Symbols.charAt(Math.floor(Math.random() * Symbols.length()));
+            if (choise == 0) Password += Uppers.charAt(Math.floor(Math.random() * 26));
+            if (choise == 1) Password += Lowers.charAt(Math.floor(Math.random() * 26));
+            if (choise == 2) Password += Numberrs.charAt(Math.floor(Math.random() * 10));
+            if (choise == 3) Password += Symbols.charAt(Math.floor(Math.random() * 5));
 
         }
     } else {
